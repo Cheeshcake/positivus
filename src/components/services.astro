@@ -1,0 +1,56 @@
+---
+import { services } from "../js/data";
+import SectionTitle from "./section-title.astro";
+---
+<SectionTitle title="Services">
+  At our digital marketing agency, we offer a range of services to <br> help businesses grow and succeed online. These services include:"
+</SectionTitle>
+<div class="grid grid-cols-1 md:grid-cols-2 m-auto w-11/12 gap-8">
+  {
+    services.map((service) => (
+      <>
+        <div
+          class="service-card border border-black flex flex-col md:flex-row  p-10 rounded-3xl relative"
+          style={{ backgroundColor: service.bgcolor }}
+        >
+          <div class="md:w-1/2">
+            <h3
+              class="w-fit px-2 rounded-xl md:mt-8"
+              style={{ backgroundColor: service.color }}
+            >
+              {service.title}
+            </h3>
+            <div class="flex items-center cursor-pointer absolute bottom-3 md:bottom-10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="3"
+                stroke={service.color}
+                class="w-10 cursor-pointer bg-black rounded-full mr-2 p-2 "
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+              <p style={{ color: service.learncolor }} class="hidden md:block">Learn more</p>
+            </div>
+          </div>
+          <div class=" md:w-1/2 p-5">
+            <img src={service.image} />
+          </div>
+        </div>
+      </>
+    ))
+  }
+</div>
+
+<style>
+  .service-card {
+    -webkit-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 1);
+  }
+</style>
