@@ -1,0 +1,22 @@
+---
+import Sponsors from "./sponsors.astro";
+import { Image } from "astro:assets";
+import hero from "../../public/assets/images/hero-image.png";
+
+---
+
+<div class="w-11/12 flex m-auto justify-between mr-3">
+  <div class="left-section w-full md:w-2/5 py-3">
+    <h1 class="my-5">Navigating the digital landscape for success</h1>
+    <p class="mb-8">
+      Our digital marketing agency helps businesses grow and succeed online
+      through a range of services including SEO, PPC, social media marketing,
+      and content creation.
+    </p>
+    <button> Book a consultation</button>
+  </div>
+  <div class="right-section w-1/2 hidden md:block">
+    <Image src={hero} alt="Speaker Image" class="hidden md:block"/>
+  </div>
+</div>
+<Sponsors/>
