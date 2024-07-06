@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 
 :root {
-  --green: #B9FF66;
+  --green: #b9ff66;
   --black: #000000;
-  --white: #FFFFFF;
-  --grey: #F3F3F3;
-  --dark: #191A23;
+  --white: #ffffff;
+  --grey: #f3f3f3;
+  --dark: #191a23;
 }
-
 
 * {
   margin: 0;
@@ -43,15 +42,22 @@ li {
   font-size: 20px;
   font-weight: 400;
 }
+.acc-index{
+  font-size: 35px ;
+
+}
+.acc-title{
+  font-size: 20px;
+}
 
 @media (min-width: 768px) {
-  h1 {
+  h1, .acc-index {
     font-size: 60px;
   }
   h2 {
     font-size: 40px;
   }
-  h3 {
+  h3,.acc-title {
     font-size: 30px;
   }
   h4 {
@@ -63,25 +69,32 @@ li {
   }
 }
 
-button {
+.btn {
   width: 100%;
   background-color: #191a23;
   padding: 15px;
   color: white;
   border-radius: 10px;
 }
-button:hover{
+.btn:hover {
   background-color: #41445a;
 }
 
 @media (min-width: 768px) {
-  button {
+  .btn{
     width: 230px;
   }
 }
 
-
-.sponsor-img{
-  -webkit-filter: grayscale(100%); 
+/*special styles*/
+.sponsor-img {
+  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
+.card {
+  border: 1px solid var(--black);
+  -webkit-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 1);
+  box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 1);
+}
+

@@ -2,15 +2,17 @@
 import { services } from "../js/data";
 import SectionTitle from "./section-title.astro";
 ---
+
 <SectionTitle title="Services">
-  At our digital marketing agency, we offer a range of services to <br> help businesses grow and succeed online. These services include:"
+  At our digital marketing agency, we offer a range of services to <br /> help
+  businesses grow and succeed online. These services include:"
 </SectionTitle>
 <div class="grid grid-cols-1 md:grid-cols-2 m-auto w-11/12 gap-8">
   {
     services.map((service) => (
       <>
         <div
-          class="service-card border border-black flex flex-col md:flex-row  p-10 rounded-3xl relative mb-5 md:mb-0"
+          class="card border border-black flex flex-col md:flex-row  p-10 rounded-3xl relative mb-5 md:mb-0"
           style={{ backgroundColor: service.bgcolor }}
         >
           <div class="md:w-1/2">
@@ -35,7 +37,9 @@ import SectionTitle from "./section-title.astro";
                   d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
                 />
               </svg>
-              <p style={{ color: service.learncolor }} class="hidden md:block">Learn more</p>
+              <p style={{ color: service.learncolor }} class="hidden md:block">
+                Learn more
+              </p>
             </div>
           </div>
           <div class=" md:w-1/2 p-5">
@@ -46,11 +50,3 @@ import SectionTitle from "./section-title.astro";
     ))
   }
 </div>
-
-<style>
-  .service-card {
-    -webkit-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 1);
-    box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 1);
-  }
-</style>
