@@ -1,0 +1,15 @@
+---
+import { Image } from "astro:assets";
+import proposal from "../../public/assets/images/proposal-img.png"
+
+---
+<div class="w-11/12 m-auto flex justify-between bg-grey p-8 md:p-16 rounded-3xl my-16 md:my-24">
+  <div class="flex flex-col justify-center w-full">
+    <h3 class="mb-8">Let’s make things happen</h3>
+    <p class="mb-8">Contact us today to learn more about how our digital <br> marketing services can help your business grow and <br> succeed online.</p>
+    <button>Get your free proposal</button>
+  </div>
+  <div>
+    <Image src={proposal} alt="proposal illustration" class="hidden md:block"/>
+  </div>
+</div>
