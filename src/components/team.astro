@@ -1,0 +1,29 @@
+---
+import { members } from "../js/data";
+import SectionTitle from "./section-title.astro";
+---
+
+<SectionTitle title="Team">
+  Meet the skilled and experienced team behind our successful <br />
+   digital marketing strategies
+</SectionTitle>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-11/12 m-auto ">
+  {
+    members.map((member) => (
+      <>
+        <div class="card rounded-3xl p-8">
+          <div class="flex items-end">
+            <img src={member.image} alt="profile picture" />
+            <div class="ml-10">
+              <h4>{member.name}</h4>
+              <p>{member.role}</p>
+            </div>
+          </div>
+          <div class="mt-4 pt-4 md:pt-7 md:mt-7 border-t-2 border-t-black">
+            <p>{member.description}</p>
+          </div>
+        </div>
+      </>
+    ))
+  }
+</div>

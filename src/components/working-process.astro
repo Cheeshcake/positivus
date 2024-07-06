@@ -5,13 +5,18 @@ import SectionTitle from "./section-title.astro";
 ---
 
 <SectionTitle title="Our Working Process ">
-  Step-by-Step Guide to Achieving <br>
-  Your Business Goals
+  Step-by-Step Guide to Achieving <br />
+   Your Business Goals
 </SectionTitle>
 <div class="w-11/12 m-auto">
   {
-    accordion_elements.map((element, index ) => (
-      <Accordion title={element.title} content={element.content} index={String(index + 1).padStart(2, '0')} client:load />
+    accordion_elements.map((element, index) => (
+      <Accordion
+        title={element.title}
+        content={element.content}
+        index={String(index + 1).padStart(2, "0")}
+        client:load
+      />
     ))
   }
 </div>

@@ -69,3 +69,42 @@ export const accordion_elements = [
     content: "Through ongoing analysis and adjustments, we'll continuously refine your marketing strategy to maximize results."
   }
 ];
+
+export const members = [
+  {
+    image: "/assets/images/john-smith.png",
+    name: "John Smith",
+    role: "CEO and Founder",
+    description: "10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy."
+  },
+  {
+    image: "/assets/images/jane-doe.png",
+    name: "Jane Doe",
+    role: "Director of Operations",
+    description: "7+ years of experience in project management and team leadership. Strong organizational and communication skills."
+  },
+  {
+    image: "/assets/images/michael-brown.png",
+    name: "Michael Brown",
+    role: "Senior SEO Specialist",
+    description: "5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization."
+  },
+  {
+    image: "/assets/images/emily-johnson.png",
+    name: "Emily Johnson",
+    role: "PPC Manager",
+    description: "3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis."
+  },
+  {
+    image: "/assets/images/brian-williams.png",
+    name: "Brian Williams",
+    role: "Social Media Specialist",
+    description: "4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement."
+  },
+  {
+    image: "/assets/images/sarah-kim.png",
+    name: "Sarah Kim",
+    role: "Content Creator",
+    description: "2+ years of experience in writing and editing. Skilled in creating compelling, SEO-optimized content for various industries."
+  }
+];

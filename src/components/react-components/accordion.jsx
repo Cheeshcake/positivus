@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-
 const Accordion = ({ title, content, index }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
 
@@ -15,7 +14,10 @@ const Accordion = ({ title, content, index }) => {
           <h1 className="acc-index">{index}</h1>
           <h3 className="acc-title md:ml-7 pl-10 md:pl-0">{title}</h3>
         </div>
-        <button onClick={() => setAccordionOpen(!accordionOpen)} className="h-fit w-fit">
+        <button
+          onClick={() => setAccordionOpen(!accordionOpen)}
+          className="h-fit w-fit"
+        >
           <svg
             className="rounded-full flex border bg-grey p-1.5 border-black shrink-0 ml-8"
             width="30"
