@@ -1,9 +1,14 @@
 ---
 import { Image } from "astro:assets";
 import contact from "../../public/assets/images/contact-img.png";
+import SectionTitle from "./section-title.astro";
 ---
 
-<div class="w-11/12 bg-grey rounded-3xl p-4 md:p-8 m-auto flex justify-center md:justify-between relative">
+<SectionTitle title="Contact Us">
+  Connect with Us: Let's Discuss Your <br>
+  Digital Marketing Needs
+</SectionTitle>
+<div class="w-11/12 bg-grey rounded-3xl p-4 md:p-8 m-auto flex justify-center md:justify-between relative mb-32">
   <div class="left-section flex flex-col p-5 h-full w-full md:w-1/2 md:ml-16">
     <div class="flex items-center">
       <input class="mr-2 toggle-radio" type="radio" id="hi" name="contact">
@@ -13,15 +18,15 @@ import contact from "../../public/assets/images/contact-img.png";
     </div>
     <div class="flex flex-col mt-10">
       <label for="name">Name</label>
-      <input class="p-3 rounded-xl border border-black focus:border-green focus:border-2" type="text" id="name" placeholder="Name">
+      <input class="contact-input p-3 rounded-xl border border-black focus:border-green focus:border-2" type="text" id="name" placeholder="Name">
     </div>
     <div class="flex flex-col my-5">
       <label for="email">Email*</label>
-      <input class="p-3 rounded-xl border border-black focus:border-green focus:border-2" type="email" id="email" placeholder="Email">
+      <input class="contact-input p-3 rounded-xl border border-black focus:border-green focus:border-2" type="email" id="email" placeholder="Email">
     </div>
     <div class="flex flex-col">
       <label for="message">Message*</label>
-      <textarea class="p-3 h-64 rounded-xl border border-black focus:border-green focus:border-2" id="message" placeholder="Message"></textarea>
+      <textarea class="contact-input p-3 h-64 rounded-xl border border-black focus:border-green focus:border-2" id="message" placeholder="Message"></textarea>
     </div>
     <button class="btn contact-btn mt-5">Send Message</button>
   </div>

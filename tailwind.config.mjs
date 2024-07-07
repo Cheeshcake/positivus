@@ -8,8 +8,12 @@ export default {
       white: "#FFFFFF",
       grey: "#F3F3F3",
     },
+    borderRadius: {
+      "3xl": "45px",
+    },
     extend: {
       colors: {
+        hovergreen: "#a6eb50",
         dark: "#191A23",
         hovergrey: "#E0E0E0",
       },

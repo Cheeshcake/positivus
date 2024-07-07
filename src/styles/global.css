@@ -42,22 +42,23 @@ li {
   font-size: 20px;
   font-weight: 400;
 }
-.acc-index{
-  font-size: 35px ;
-
+.acc-index {
+  font-size: 35px;
 }
-.acc-title{
+.acc-title {
   font-size: 20px;
 }
 
 @media (min-width: 768px) {
-  h1, .acc-index {
+  h1,
+  .acc-index {
     font-size: 60px;
   }
   h2 {
     font-size: 40px;
   }
-  h3,.acc-title {
+  h3,
+  .acc-title {
     font-size: 30px;
   }
   h4 {
@@ -80,11 +81,11 @@ li {
   background-color: #41445a;
 }
 
-.contact-btn{
+.contact-btn {
   width: 100% !important;
 }
 @media (min-width: 768px) {
-  .btn{
+  .btn {
     width: 230px;
   }
 }
@@ -102,13 +103,12 @@ li {
 }
 
 /*carousel properties*/
-.indicator{
+.indicator {
   transform: rotate(45deg);
 }
 .indicator.active {
   color: var(--green);
 }
-
 
 /*contact-us properties*/
 .toggle-radio:checked {
@@ -125,8 +125,9 @@ li {
   border: 0.1em solid black;
   border-radius: 50%;
   outline: none;
-  transition: background-color 0.3s, border-color 0.3s;
-  display: inline-block;
+  transition:
+    background-color 0.3s,
+    border-color 0.3s;
   position: relative;
 }
 .toggle-radio:checked::before {
@@ -142,6 +143,10 @@ li {
   transform: translate(-50%, -50%);
 }
 .toggle-radio:focus {
+  outline: none;
+  box-shadow: none;
+}
+.contact-input:focus {
   outline: none;
   box-shadow: none;
 }
