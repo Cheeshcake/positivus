@@ -80,6 +80,9 @@ li {
   background-color: #41445a;
 }
 
+.contact-btn{
+  width: 100% !important;
+}
 @media (min-width: 768px) {
   .btn{
     width: 230px;
@@ -106,3 +109,39 @@ li {
   color: var(--green);
 }
 
+
+/*contact-us properties*/
+.toggle-radio:checked {
+  background-color: var(--green);
+  border-color: var(--black);
+}
+.toggle-radio {
+  padding: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 1em;
+  height: 1em;
+  border: 0.1em solid black;
+  border-radius: 50%;
+  outline: none;
+  transition: background-color 0.3s, border-color 0.3s;
+  display: inline-block;
+  position: relative;
+}
+.toggle-radio:checked::before {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 60%;
+  background-color: var(--green);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.toggle-radio:focus {
+  outline: none;
+  box-shadow: none;
+}

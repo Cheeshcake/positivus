@@ -26,7 +26,9 @@ const Carousel = () => {
         >
           {testimonials.map((testimonial, index) => (
             <div
-              className={`p-5 w-full  ${index === currentIndex ? "active" : ""}`}
+              className={`p-5 w-full  ${
+                index === currentIndex ? "active" : ""
+              }`}
               key={index}
               style={{
                 flex: "0 0 100%",
